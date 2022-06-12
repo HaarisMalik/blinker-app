@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --primary-color: #6030b1;
+    --accent-color: #ff328f;
+    --secondary-color: #448aff;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+#phone-nav {
+    display: none;
+}
+
+.purple {
+    color: var(--primary-color);
+}
+
+
+/* 
+
+NAVIGATION
+
+*/
+
+.logo {
+    width: 150px;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 105px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nav-links a {
+    width: 100%;
+    padding: 28px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-contact {
+    border: none;
+    background-color: var(--primary-color);
+    padding: 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    
+}
+.btn-contact a {
+    color: white;
+    font-size: 14px;
+}
+
+.btn-contact:hover {
+    background-color: var(--accent-color);
+    transition: all 300ms ease;
+    
+}
+
+/*
+
+LANDING
+
+*/
+
+.flex {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.landing-img {
+    width: 100%;
+    width: 1000px;
+    padding-top: 24px;
+}
+
+h1, h2{
+    padding-bottom: 24px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+input {
+    width: 100%;
+    width: 500px;
+    height: 80px;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 20px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn {
+    border: none;
+    background-color: var(--primary-color);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 18px;
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.search-btn:hover {
+    background-color: var(--accent-color);
+    transition: all 300ms ease;
+    
+}
+
+.search-icon {
+    width: 50px;
+    filter: invert(1);
+}
+
+
+
