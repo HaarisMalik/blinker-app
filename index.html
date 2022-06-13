@@ -5,29 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <title>Movie Subscription Platform | Blinker</title>
 </head>
 <body>
     <header>
+        <nav>
         <div class="content-wrapper">
             <div>
                 <img class="logo" src="./assets/Blinkerlogo.png" alt="logo">
             </div>
             <div class="nav-links">
-                <a href="#"><span class="purple">Home</span></a>
-                <a href="#">Find your movie</a>
+                <a href="#"><span class="purple link__hover-effect">Home</span></a>
+                <a href="#" ><span class="link__hover-effect--movie">Movies</span></a>
                 <button class="btn-contact"><a href="#">CONTACT</a></button>
             </div>
-            <div id="phone-nav">
-                <div class="bento-menu"></div>
-                <div class="close-btn"></div>
-                <div class="show-menu">
-                    <a href="#">Home</a>
-                    <a href="#">Find your movie</a>
-                    <a href="#">CONTACT</a>
-                </div>
-            </div>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                  <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                  <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">Movies</a>
+                  </li>
+                  <li class="menu__list">
+                    <a class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+                  </li>
+                </ul>
+              </div>
         </div>
+        </nav>
     </header>
    <section id="landing">
     <div class="flex">
