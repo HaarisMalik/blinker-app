@@ -200,11 +200,15 @@ NAVIGATION
     
 }
 
+
+
 /*
 
 LANDING
 
 */
+
+
 
 .flex {
     width: 100%;
@@ -232,11 +236,15 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 h2 {
     font-size: 25px;
     font-weight: bolder;
+    animation-duration: 3s;
+    animation-name: slidein2;
 }
 
 input {
@@ -247,6 +255,7 @@ input {
     border-radius: 20px;
     font-size: 24px;
     text-align: center;
+
     
 }
 
@@ -255,6 +264,8 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-duration: 3s;
+    animation-name: slidein3;
 }
 
 .search-btn {
@@ -279,6 +290,35 @@ form {
     filter: invert(1);
 }
 
+@keyframes slidein {
+  
+    0% {
+        opacity: 0%;
+        transform: translateY(25%);
+    }
+
+  
+}
+
+@keyframes slidein2 {
+  
+    0% {
+        opacity: 0%;
+        transform: translateY(50%);
+    }
+
+  
+}
+
+@keyframes slidein3 {
+  
+    0% {
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+
+  
+}
 
 /* Media Queries */
 
